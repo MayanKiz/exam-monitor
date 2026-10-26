@@ -1,0 +1,29 @@
+# Secrets
+.env
+
+# Runtime output
+snapshots/
+models/*.task
+models/*.weights
+models/*.cfg
+exam-monitor.zip
+events.sqlite3
+events.sqlite3-shm
+events.sqlite3-wal
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.venv/
+venv/
+env/
+build/
+dist/
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

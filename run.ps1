@@ -1,0 +1,6 @@
+$ErrorActionPreference = 'Stop'
+Set-Location $PSScriptRoot
+$python = Join-Path $PSScriptRoot '.venv\Scripts\python.exe'
+if (-not (Test-Path $python)) { throw 'Environment missing; run setup.ps1 first.' }
+& $python main.py @args
+exit $LASTEXITCODE
