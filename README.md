@@ -9,14 +9,10 @@ Clone the repository, enter the project folder, and run setup. The script create
 ```bash
 git clone https://github.com/MayanKiz/exam-monitor.git
 cd exam-monitor
-bash setup.sh
-```
-
-On Windows, use the same `git clone` and `cd` commands in PowerShell, then run:
-
-```powershell
 powershell -ExecutionPolicy Bypass -File .\setup.ps1
 ```
+
+
 
 The first run downloads the face-landmarker model if needed and a small YOLOv4-tiny COCO model for phone detection (~23 MB). Allow network access for that one-time download. Later, start the app with `./run.sh` on macOS/Linux or `.\run.ps1` in PowerShell. Press `q` or `Esc` to exit, and `c` to recalibrate.
 
